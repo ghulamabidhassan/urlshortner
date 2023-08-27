@@ -11,7 +11,7 @@ const router = express.Router();
 app.use(express.json());
 app.use(
   cors({
-    origin: "*",
+    origin: "https://url-shortner-abid.netlify.app",
   })
 );
 
