@@ -6,7 +6,7 @@ const Params = () => {
   const [data, setData] = useState();
   const [loading, setLoading] = useState(true);
   const { id } = useParams();
-  let url = `https://url-shortner-abid.netlify.app/.netlify/functions/server/${id}`;
+  let url = `https://url-shortner-abid.netlify.app/.netlify/functions/server/stats/${id}`;
 
   const fetchUrl = async () => {
     const { data } = await axios.get(url);
