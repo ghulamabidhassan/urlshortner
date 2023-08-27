@@ -27,7 +27,7 @@ const Params = () => {
       </div>
     );
   }
-  return window.location.replace(data.data[0].url);
+  return window.location.replace(data.result[0].url);
 };
 
 export default Params;
