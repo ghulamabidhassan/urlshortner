@@ -1,0 +1,155 @@
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 1.4em 10em;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.menus {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  font-weight: 600;
+}
+
+.menus > * {
+  margin: 0 1em;
+  transition: 300ms ease-in-out;
+}
+
+.menus > *:hover {
+  cursor: pointer;
+  scale: 1.06;
+}
+
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* height: 400px; */
+  /* background-color: blue; */
+  padding: 2em 0;
+}
+
+.heading {
+  font-size: 2.5em;
+  /* margin-bottom: 0.25em; */
+  margin: 1em 0 0.25em 0;
+}
+
+.content {
+  width: 50%;
+  text-align: center;
+  line-height: 1.5em;
+  font-weight: 600;
+  color: #524e4eb2;
+}
+
+.input-section {
+  margin: 1.25em 0;
+  display: flex;
+}
+
+form {
+  display: flex;
+}
+
+input {
+  font-size: 1.2em;
+  padding: 0.5em 1em 0.5em 1em;
+  border-radius: 0.5em 0 0em 0.5em;
+  border: none;
+  outline: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+input:focus {
+  outline: 1px solid black;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  padding: 0 3em;
+  border: none;
+  border-radius: 0 0.5em 0.5em 0;
+  font-size: 1.1em;
+  letter-spacing: 2px;
+  border: 1px solid transparent;
+  transition: 300ms ease-in-out;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.stats {
+  display: grid;
+  place-items: center;
+  padding: 2em 0;
+}
+
+.stats-container {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  color: rgb(230, 219, 219);
+  background-color: #181824;
+}
+
+.links {
+  display: flex;
+  width: auto;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 0.5em 1.5em;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 1em 0;
+  border-radius: 0.5em;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  /* display: none; */
+}
+
+.link {
+  margin: 0 0.5em;
+  text-decoration: none;
+  color: inherit;
+  transition: 200ms ease-in-out;
+}
+
+.link:hover {
+  cursor: pointer;
+  scale: 1.03;
+}
+
+.hits,
+.error {
+  color: rgb(190, 26, 26);
+  transition: 200ms ease-in-out;
+}
+
+:is(.hits, .error):hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+
+.copy {
+  transition: 200ms ease-in-out;
+  color: rgb(27, 196, 27);
+}
+
+.copy:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
