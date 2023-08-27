@@ -49,7 +49,7 @@ const makeShortUrl = async (req, res) => {
   } else {
     const hits = 0;
     const shortID = nanoid(6);
-    const myUrl = "http://localhost:5173";
+    const myUrl = "https://url-shortner-abid.netlify.app";
     const shortUrl = `${myUrl}/r/${shortID}`;
     const insertInto = await insertResult(shortID, url, hits);
     const data = await getUrl(shortID);
