@@ -27,7 +27,15 @@ const Navbar = () => {
           <Link className="react-links" to="/stats">
             <li>Stats</li>
           </Link>
-          <li>Github</li>
+          <li>
+            <a
+              className="github"
+              target="blank"
+              href="https://github.com/ghulamabidhassan/urlshortner"
+            >
+              Github
+            </a>
+          </li>
         </ul>
       </div>
     </nav>

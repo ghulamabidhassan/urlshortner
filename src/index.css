@@ -57,6 +57,32 @@ body {
   color: rgb(83, 80, 80);
 }
 
+.outer-container {
+  position: relative;
+  height: 100vh;
+}
+
+.copyright {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 7%;
+  text-transform: capitalize;
+  font-size: 1em;
+}
+
+.abid-link {
+  text-transform: uppercase;
+  padding-left: 0.4em;
+  text-decoration: none;
+  color: rgb(197, 20, 20);
+}
+
+.github {
+  text-decoration: none;
+  color: inherit;
+}
+
 @media screen and (max-width: 490px) {
   .navbar {
     padding: 1em;
