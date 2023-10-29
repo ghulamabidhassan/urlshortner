@@ -69,4 +69,9 @@ const urlRedirect = async (req, res) => {
   }
 };
 
-export { makeShortUrl, urlRedirect, getUrl };
+const timer = async () => {
+  let [data] = await pool.query(`show tables`);
+  return data;
+};
+
+export { makeShortUrl, urlRedirect, getUrl, timer };

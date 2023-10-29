@@ -2,16 +2,19 @@ import express from "express";
 import serverless from "serverless-http";
 import { nanoid } from "nanoid";
 import cors from "cors";
+import schedule from "node-schedule";
 
-import { makeShortUrl, urlRedirect, getUrl } from "./functions";
+import { makeShortUrl, urlRedirect, getUrl, timer } from "./functions";
 
 const app = express();
 const router = express.Router();
 
+let url = "https://url-shortner-abid.netlify.app";
+
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://url-shortner-abid.netlify.app",
+    origin: url,
   })
 );
 
@@ -40,6 +43,10 @@ router.get("/stats/:shortID", async (req, res) => {
 router.post("/", async (req, res) => {
   let result = await makeShortUrl(req, res);
   return result;
+});
+
+schedule.scheduleJob("0 * * * *", async () => {
+  const data = await timer();
 });
 
 export const handler = serverless(app);
