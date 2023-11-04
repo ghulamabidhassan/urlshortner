@@ -9,7 +9,7 @@ import { makeShortUrl, urlRedirect, getUrl, timer } from "./functions";
 const app = express();
 const router = express.Router();
 
-let url = "https://url-shortner-abid.netlify.app";
+let url = "https://urlshortner.abidhassan.dev";
 
 app.use(express.json());
 app.use(

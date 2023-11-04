@@ -9,7 +9,7 @@ const Stats = () => {
 
   const { dark } = useGlobalContext();
 
-  let url = `https://url-shortner-abid.netlify.app/.netlify/functions/server/stats/${shortID}`;
+  let url = `https://urlshortner.abidhassan.dev/.netlify/functions/server/stats/${shortID}`;
 
   const setID = (e) => {
     let value = e.currentTarget.value;
