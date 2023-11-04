@@ -8,7 +8,7 @@ const MainPage = () => {
   const [data, setData] = useState();
   const { dark, darkMode } = useGlobalContext();
 
-  let url = "https://url-shortner-abid.netlify.app/.netlify/functions/server";
+  let url = "https://urlshortner.abidhassan.dev/.netlify/functions/server";
 
   const fetchLink = async (e) => {
     e.preventDefault();
