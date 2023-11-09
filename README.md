@@ -24,8 +24,7 @@ This is a simple URL shortener project built with [React](https://reactjs.org/) 
    git clone https://github.com/ghulamabidhassan/urlshortner.git
 
 2. cd urlshortner && npm install && npm run dev
-3. npm install
-4. cd functions && netlify dev
+3. cd functions && netlify dev
 
 [Live Demo URL](https://urlshortner.abidhassan.dev/)
 
